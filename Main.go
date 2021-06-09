@@ -93,6 +93,7 @@ func main() {
 	fmt.Println(x)
 	fmt.Println(y)
 	fmt.Println(z)
+	
 	fileSize := 4000000000.
 	fmt.Printf("%.2fGB\n,%.1f", fileSize/GB, 2.)
 }
