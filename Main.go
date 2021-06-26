@@ -95,5 +95,43 @@ func main() {
 	fmt.Println(z)
 	
 	fileSize := 4000000000.
-	fmt.Printf("%.2fGB\n,%.1f", fileSize/GB, 2.)
+	fmt.Printf("%.2fGB\n,%.1f\n", fileSize/GB, 2.)
+
+	a1 := [] int{}
+	a1 = append(a1, 1)
+	fmt.Printf("Length: %v\n", len(a1))
+
+	number := 50
+	guess := 50
+	if guess < number { fmt.Println("too low")}
+	if guess == number {fmt.Println("you got it!")}
+	if guess > number { fmt.Println("too high")}
+	returnTrue()
+	i2 :=10
+	switch {
+	case i2 <=10:
+		fmt.Println("one")
+	case i2 <=20:   // you can also use case 1 , 3 , 4 but they all have to be integers
+		fmt.Println("two")
+	default:
+		fmt.Println("default")
+	}
+	var i3 interface{} =1
+	switch i3.(type) {
+	case int:
+		fmt.Println("i is an int")
+		break
+		//fmt.Println("this will print too")
+	case float64:
+		fmt.Println("i is a float64")
+	case string:
+		fmt.Println("is is string")
+	default:
+		fmt.Println("default is another type")
+	}
+
+}
+func returnTrue() bool {
+	fmt.Println("returning true")
+	return true;
 }
